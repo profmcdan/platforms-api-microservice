@@ -1,5 +1,11 @@
 ## RUN Commands
 
+Build the docker images and push to dockerhub -- Do the same thing for other services
+```
+docker build -t profmcdan/commandservice .
+docker push profmcdan/commandservice
+```
+
 Start the deployment
 ```
 kubectl apply -f platforms-depl.yaml 
