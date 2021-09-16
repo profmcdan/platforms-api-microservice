@@ -67,6 +67,7 @@ namespace PlatformService
             });
             
             InitDb.PrepPopulation(app);
+            Console.WriteLine($"--> Service connected: {Configuration.GetSection("CommandService").Value}");
         }
     }
 }

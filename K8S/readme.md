@@ -38,3 +38,12 @@ Delete Service -- remember to delete the deployment after
 ```
 kubectl delete svc platformnpservice-srv 
 ```
+
+For Ingress Nginx Controller
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.0/deploy/static/provider/cloud/deploy.yaml
+
+kubectl get pods -namespace ingress-nginx
+
+kubectl get services --namespace=ingress-nginx
+```
